@@ -47,6 +47,6 @@ jobs:
           registryUrl: docker.io
           registryUsername: ${{ secrets.DOCKERHUB_USERNAME }}
           registryPassword: ${{ secrets.DOCKERHUB_TOKEN }}
-          resourceGroup: container-labs-rg-yourname     # ← your RG name
+          resourceGroup: container-labs-rg-joshgun     # ← your RG name
           containerAppName: frontendapp
           imageToBuild: ${{ secrets.DOCKERHUB_USERNAME }}/frontendapp-node:${{ github.sha }}
